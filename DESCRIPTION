@@ -1,0 +1,12 @@
+Package: cynthiahqy
+Type: Package
+Title: R Functions that Cynthia A Huang Finds Useful
+Version: 0.1.0
+Authors@R:
+    person("Cynthia A.", "Huang", , "cynthiahqy@gmail.com",
+        role = c("aut", "cre")) 
+Description: A personal package of custom R Functions inspired by {flighttools}
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
