@@ -1,0 +1,12 @@
+---
+title: {{title}}
+description: {{description}}
+date: {{date}}
+date-modified: last-modified
+draft: {{draft}}
+categories:
+{{#categories}}
+  - {{.}}
+{{/categories}} 
+image: https://carbon.now.sh/?bg=rgba%28255%2C255%2C255%2C1%29&t=blackboard&wt=none&l=r&width=320&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=69px&ph=55px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=library%28pander%29
+---
