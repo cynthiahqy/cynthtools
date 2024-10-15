@@ -1,0 +1,22 @@
+---
+title: {{{title}}}
+talk:
+  date: {{{talk.date}}}
+  venue: {{{talk.venue}}}
+  location: {{{talk.location}}}
+  format: {{{talk.format}}}
+{{#recording}}
+  recording: {{recording}}
+{{/recording}}
+repo:
+  remote: {{{repo.remote}}}
+  local: {{{repo.local}}}
+{{#abstract}}
+abstract: |
+  {{{abstract}}}
+{{/abstract}}
+slides:
+  pdf: {{slides.pdf}}
+  html: {{slides.html}}
+  source: {{slides.source}}
+---

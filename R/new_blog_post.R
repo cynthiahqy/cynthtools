@@ -34,13 +34,13 @@ new_blog_post <- function(
 
     # update default data list with optional args
     dots <- rlang::dots_list(...)
-    data <- modifyList(data, dots)
+    data <- utils::modifyList(data, dots)
 
     # use template
     usethis::use_template(template,
         save_as = save_as,
         data = data,
-        package = "cynthiahqy",
+        package = "cynthtools",
         open = TRUE
     )
 }
