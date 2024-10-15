@@ -18,6 +18,10 @@ add_talk_index(
 )
 }
 \arguments{
+\item{source}{A character string specifying the source file for the slides.}
+
+\item{talk_metadata}{A list object with metadata related to the talk.}
+
 \item{data}{A list of data passed to the template.}
 
 \item{save_as}{Path of file to create, relative to root of active project.
@@ -27,8 +31,6 @@ Defaults to \code{template}}
 within \code{package}; see details.}
 
 \item{...}{Additional optional arguments to update the default data list.}
-
-\item{slides}{A character string specifying the source file for the slides.}
 }
 \value{
 None
