@@ -2,6 +2,7 @@
 # cynthtools
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/cynthiahqy/cynthtools/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/cynthiahqy/cynthtools/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 `cynthtools` is a personal package for Cynthia A Huang, inspired by Robert M Flight's [`flighttools`](https://github.com/rmflight/flighttools/tree/main). For now, it mostly contains templates and helpers for setting up markdown documents and quarto projects. Some code and roxygen documentation is generated with assistance from GitHub co-pilot.
