@@ -1,7 +1,7 @@
 ---
 title: {{{title}}}
+date: {{{talk.date}}}
 talk:
-  date: {{{talk.date}}}
   venue: {{{talk.venue}}}
   location: {{{talk.location}}}
   format: {{{talk.format}}}

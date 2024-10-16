@@ -1,7 +1,7 @@
 Package: cynthtools
 Type: Package
 Title: R Functions that Cynthia A Huang Finds Useful
-Version: 0.1.0
+Version: 0.1.0.9000
 Authors@R:
     person("Cynthia A.", "Huang", , "cynthiahqy@gmail.com",
         role = c("aut", "cre")) 
@@ -12,9 +12,11 @@ LazyData: true
 RoxygenNote: 7.3.2
 URL: https://github.com/cynthiahqy/cynthtools
 BugReports: https://github.com/cynthiahqy/cynthtools/issues
-Imports: 
+Imports:
+    clipr,
     fs,
     rlang,
     usethis,
     utils,
+    whisker,
     yaml

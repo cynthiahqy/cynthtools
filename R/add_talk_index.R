@@ -1,8 +1,7 @@
-#' Add Talk Index Page
+#' Generate Talk YAML Header
 #'
-#' This function adds an index page to a talk repository using metadata from the active repository.
-#' It is a wrapper around usethis::use_template('talk-index.qmd', package = 'cynthiahqy')
-#' The template can be found in `cynthiahqy/inst/templates`.
+#' This function generates the YAML header for a talk page and
+#' adds it to the clipboard
 #'
 #' @param source A character string specifying the source file for the slides.
 #' @param talk_metadata A list object with metadata related to the talk.
@@ -16,7 +15,7 @@
 #' \dontrun{
 #' add_talk_index()
 #' }
-add_talk_index <- function(
+clip_talk_index <- function(
     source = "slides.qmd",
     talk_metadata = yaml::read_yaml("_talk.yml"),
     data = list(
@@ -37,22 +36,17 @@ add_talk_index <- function(
             source = source
         )
     ),
-    save_as = "index.qmd",
-    template = "talk-index.qmd",
     ...) {
-    # create path directories
-    dir <- fs::path_dir(save_as)
-    fs::dir_create(dir)
-
     # update default data list with optional args
     dots <- rlang::dots_list(...)
     data <- utils::modifyList(data, dots)
 
     # use template
-    usethis::use_template(template,
-        save_as = save_as,
-        data = data,
-        package = "cynthtools",
-        open = TRUE
+    template <- readLines(
+        fs::path_package("cynthtools", "templates", "talk-index.txt")
     )
+    output <- whisker::whisker.render(template, data)
+    cat(output)
+    clipr::write_clip(output, allow_non_interactive = TRUE)
+    invisible(output)
 }
